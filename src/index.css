@@ -1,13 +1,237 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body { 
+ margin: 0;
+ }
+
+
+/* The Random Quote css page */
+
+.blockquote-wrapper {
+   display: flex;
+   height: 100vh;
+   padding: 0 20px;
+   background-color: #292a2b;
+   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.blockquote {
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
 }
+
+.blockquote h1 {
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #e74848;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+}
+
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid #e74848;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #292a2b;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+   }
+
+}
+
+.blockquote h4 {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+ 
+.blockquote h4:first-letter {
+  margin-left:-12px;
+}
+
+.blockquote-wrapper button{
+    background: no-repeat;
+    font-size: 30px;
+    padding: 0px;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+/* Cat Facts css */
+
+
+
+.blockFacts-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 20px;
+    background-image: url("../src/img/catFactBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+ }
+
+ .blockFacts {
+     position: relative;
+     font-family: 'Barlow Condensed', sans-serif;
+     max-width: 620px;
+     margin: 80px auto;
+     align-self: center;
+ }
+
+ 
+ .blockFacts h1 {
+     font-family: 'Abril Fatface', cursive;
+     position: relative;
+     color: #606c38;
+     font-size: 2.8rem;
+     font-weight: normal;
+     line-height: 1;
+     margin: 0;
+     border: 2px solid #fff;
+     border: solid 2px;
+     border-radius:20px;
+     padding: 25px;
+ }
+ 
+ .blockFacts h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid #606c38;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -62px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+ }
+ 
+ .blockFacts h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #606c38;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+ }
+ 
+ @media all and (min-width: 600px) {
+     .blockFacts h1 {
+         font-size: 3rem;
+         line-height: 1.2;
+    }
+ 
+ }
+ 
+ .blockFacts h4 {
+     position: relative;
+     color: #ffffff;
+     font-size: 1.3rem;
+     font-weight: 400;
+     line-height: 1.2;
+     margin: 0;
+     padding-top: 15px;
+     z-index: 1;
+     margin-left:150px;
+     padding-left:12px;
+ }
+ 
+  
+ .blockFacts h4:first-letter {
+   margin-left:-12px;
+ }
+ 
+ .blockFacts-wrapper button{
+    font-family: 'Abril Fatface', cursive;
+     background: no-repeat;
+     font-size: 30px;
+     padding: 0px;
+     border-radius: 0px;
+     border: 0;
+     cursor: pointer;
+     color: #606c38;
+     margin-bottom: 100px;
+ }
+
+
+
+
+ /* The Navbar css page */
+
+  nav{
+    height: 80px;
+    background-color: #222;
+    border-bottom: 1px solid #555
+ }
+
+  .list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+  }
+
+  .list-item button {
+    /* float: left; */
+    padding: 13px 13px;
+    border-radius: 3px;
+    transition: all .7s ease-in-out;
+    border: none;
+    background-color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffffff;
+  }
+  .list-item button:hover {
+    background-color: brown;
+  }
+
+
+
+
+ 
